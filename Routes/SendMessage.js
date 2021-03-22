@@ -5,7 +5,7 @@ const UserMessage=mongoose.model("UserMessage");
 // const router=require('./Authentication')
 
 
-router.post('/webdevelopment',async(req,res)=>{
+router.post('/sendmessage',async(req,res)=>{
     const {name,email,mobile,country,interest,findus,getstarted,message,docs}=req.body;
     if(!name || !email || !mobile || !country)
         return res.status(422).json({error:"Please add all the fields!"});
