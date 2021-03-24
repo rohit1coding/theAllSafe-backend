@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const UserMessage=mongoose.Schema({
+const ContactUs=mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -12,14 +12,9 @@ const UserMessage=mongoose.Schema({
         type:String,
         required:true
     },
-    country:{
+    message:{
         type:String,
         required:true
-    },
-    interest:{type:String},
-    findus:{type:String},
-    getstarted:{type:String},
-    message:{type:String},
-    docs:{type:String}
+    }
 });
-mongoose.model("UserMessage",UserMessage);
+mongoose.model("ContactUs",ContactUs);
